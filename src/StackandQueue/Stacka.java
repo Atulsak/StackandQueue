@@ -7,7 +7,7 @@ import java.util.LinkedList;
 public class Stacka {
 	 static LinkedList<String> ll = new LinkedList<>();
 
-	    public static void push(String data){
+	    public static void enQueue(String data){
 	        ll.add(data);
 	    }
 
@@ -17,8 +17,7 @@ public class Stacka {
 	    public static void print(){
 	        if(ll.size() != 0) {
 	            for (String element : ll) {
-	                System.out.println("| " + element + "|");
-	                System.out.println(" --- ");
+	                System.out.print("| " + element + " | ");
 	            }
 	            System.out.println();
 	        } else
@@ -26,21 +25,21 @@ public class Stacka {
 	    }
 
 	    public static void main(String[] args) {
-	        System.out.println("Welcome to Stack and Queue Problems.");
-	        push("56");
-	        push("30");
-	        push("70");
-	        push("70");
-	        push("70");
-	        push("70");
-	        System.out.println("Stack ::::::::::::::");
+	        System.out.println("Welcome to Stack and Queue Problems...");
+	        enQueue("56");
+	        enQueue("30");
+	        enQueue("70");
+	        enQueue("70");
+	        enQueue("70");
+	        enQueue("70");
+	        System.out.println("Stack ");
 	        print();
 	        int size = ll.size();
 	        System.out.println("size " +ll.size());
 	        for (int i = 0; i < size; i++){
 	            pop();
 	        }
-	        System.out.println("Stack :::::::::::::::::::");
+	        System.out.println("Queue ");
 	        print();
 	    }
 }
